@@ -7,7 +7,6 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 // Import route handlers
-const AuthRouter = require("./Routes/AuthRouter");
 const HackRxRouter = require("./Routes/HackRxRouter");
 
 // Connect to MongoDB database
@@ -24,9 +23,6 @@ app.use(cors());
 
 // Parse incoming JSON requests
 app.use(bodyParser.json());
-
-// Mount authentication routes under /auth
-app.use("/auth", AuthRouter);
 
 // Mount HackRx routes under /hackrx
 app.use("/hackrx", HackRxRouter);

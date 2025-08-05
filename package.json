@@ -23,6 +23,7 @@
     "mammoth": "^1.10.0",
     "mongoose": "^8.4.1",
     "multer": "^2.0.2",
+    "openai": "^5.11.0",
     "pdf-parse": "^1.1.1",
     "textract": "^2.5.0"
   },
