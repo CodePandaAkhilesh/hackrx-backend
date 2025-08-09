@@ -7,7 +7,7 @@ const router = express.Router();
 
 // Initialize Gemini model
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
 
 // Normalize spaces
 const preprocessText = (text) => text.replace(/\s+/g, " ").trim();
